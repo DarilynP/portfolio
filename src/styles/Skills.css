@@ -1,0 +1,76 @@
+.skills {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: white;
+}
+
+.skills h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.skills h2 .regular {
+  font-weight: 400; /* regular weight, not bold */
+}
+
+/* Skill logos container */
+.skills__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Individual skill card */
+.skills__logo-box {
+  width: 186px;
+  height: 186px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 3px solid black;
+  transition: transform 0.4s ease, background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 800px; /* Adds subtle 3D depth */
+}
+
+/* Hover effect — turns slightly backward and darkens */
+.skills__logo-box:hover {
+  transform: rotateY(15deg) rotateX(5deg);
+  background-color: black;
+  color: white;
+}
+
+/* Make logo white on hover */
+.skills__logo-box:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Make skill text white on hover */
+.skills__logo-box:hover p {
+  color: white;
+}
+
+/* Skill logo image */
+.skills__logo-box img {
+  margin-top: 40px;
+  transition: filter 0.3s ease;
+}
+
+/* Skill name text */
+.skills__logo-box p {
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}

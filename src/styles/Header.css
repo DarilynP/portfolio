@@ -1,0 +1,80 @@
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: white;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 1;
+  margin-left: 50px;
+}
+
+/* Navigation wrapper */
+.header__nav {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  
+}
+
+/* Links list */
+.header__links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; /* more spacing between nav links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styling */
+.header__links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.header__links a:hover {
+  color: #ff6b35;
+}
+
+/* Resume button */
+.resume__button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between text and icon */
+  padding: 10px 24px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 300px; /* added spacing from nav links */
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect – gray background */
+.resume__button:hover {
+  background-color: #555;
+}
+
+/* Download icon inside the button */
+.hero__icon {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* makes icon white */
+}

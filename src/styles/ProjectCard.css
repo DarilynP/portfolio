@@ -1,0 +1,50 @@
+/* Project Card */
+.project-card {
+  background-color: #111; /* dark card */
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: #000;
+}
+
+/* Project image */
+.project-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Project title */
+.project-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Project description */
+.project-card__description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.project-card__icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect: gray + scale */
+.project-card__icon:hover {
+  transform: scale(1.1);
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.8;
+}

@@ -1,0 +1,42 @@
+.about {
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+  font-family: "Sora", sans-serif;
+}
+
+.about__container {
+  display: flex;
+  align-items: flex-start; /* aligns image and text at the top */
+  justify-content: space-between;
+  gap: 50px; /* space between image and text */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+/* .about__image img {
+  width: 400px; 
+  max-width: 100%;
+  border-radius: 12px;
+} */
+
+.about__text {
+  flex: 1; /* text takes remaining space */
+}
+
+.about__text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about__text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.about__image img {
+  width: 100%;
+}

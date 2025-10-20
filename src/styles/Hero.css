@@ -1,0 +1,89 @@
+/* Hero section container */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: white;
+}
+
+/* Text section */
+.hero__text h1 {
+  font-family: "AG", sans-serif; /* main font */
+  font-size: 48px; /* original heading size */
+  line-height: 1.2;
+  color: black;
+}
+
+.hero__headline {
+  font-size: 3rem; /* same as h1 */
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero__text .regular {
+  font-weight: 400; /* regular weight */
+}
+
+.hero__text .bold {
+  font-weight: 700; /* bold weight */
+}
+
+.hero__text .bubble {
+  font-weight: 700;
+  -webkit-text-stroke: 1px black; /* bubble / outline effect */
+  color: transparent;
+}
+
+.hero__text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.hero__icon {
+  width: 18px; /* adjust if needed */
+  height: 18px;
+  margin-left: 8px;
+  filter: brightness(0) invert(1); /* this makes dark icons appear white */
+}
+
+/* Social icons container */
+.hero__socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Individual social icon (GitHub) */
+.hero__social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000; /* square black border like skills */
+  border-radius: 8px; /* optional slight rounding */
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero__social img {
+  width: 35px;
+  height: 35px;
+  filter: invert(0); /* black icon */
+}
+
+.hero__social:hover {
+  background-color: #000;
+}
+
+.hero__social:hover img {
+  filter: invert(1); /* white icon on hover */
+}
+
+/* Illustration / banner */
+.hero__illustration img {
+  display: block; /* ensure proper display */
+  object-fit: contain; /* preserve aspect ratio */
+}
