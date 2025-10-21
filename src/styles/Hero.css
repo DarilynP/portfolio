@@ -6,33 +6,46 @@
   padding: 80px 10%;
   background-color: white;
 }
+.hero__text {
+  max-width: 100%;
+  padding: 0 20px; /* gives space on left/right */
+  box-sizing: border-box; /* include padding in width */
+  overflow-x: hidden; /* optional safety */
+}
+.hero__text h1,
+.hero__text p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.3; /* optional for spacing */
+}
+
 
 /* Text section */
 .hero__text h1 {
-  font-family: "AG", sans-serif; /* main font */
-  font-size: 48px; /* original heading size */
+  font-family: "AG", sans-serif;
+  font-size: 48px;
   line-height: 1.2;
   color: black;
 }
 
 .hero__headline {
-  font-size: 3rem; /* same as h1 */
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
 }
 
 .hero__text .regular {
-  font-weight: 400; /* regular weight */
+  font-weight: 400;
 }
 
 .hero__text .bold {
-  font-weight: 700; /* bold weight */
+  font-weight: 700;
 }
 
 .hero__text .bubble {
   font-weight: 700;
-  -webkit-text-stroke: 1px black; /* bubble / outline effect */
+  -webkit-text-stroke: 1px black;
   color: transparent;
 }
 
@@ -40,11 +53,12 @@
   font-size: 20px;
   margin-top: 10px;
 }
+
 .hero__icon {
-  width: 18px; /* adjust if needed */
+  width: 18px;
   height: 18px;
   margin-left: 8px;
-  filter: brightness(0) invert(1); /* this makes dark icons appear white */
+  filter: brightness(0) invert(1);
 }
 
 /* Social icons container */
@@ -54,15 +68,15 @@
   margin-top: 20px;
 }
 
-/* Individual social icon (GitHub) */
+/* Individual social icon */
 .hero__social {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 2px solid #000; /* square black border like skills */
-  border-radius: 8px; /* optional slight rounding */
+  border: 2px solid #000;
+  border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -71,7 +85,7 @@
 .hero__social img {
   width: 35px;
   height: 35px;
-  filter: invert(0); /* black icon */
+  filter: invert(0);
 }
 
 .hero__social:hover {
@@ -79,11 +93,77 @@
 }
 
 .hero__social:hover img {
-  filter: invert(1); /* white icon on hover */
+  filter: invert(1);
 }
 
 /* Illustration / banner */
 .hero__illustration img {
-  display: block; /* ensure proper display */
-  object-fit: contain; /* preserve aspect ratio */
+  display: block;
+  object-fit: contain;
+}
+
+/* ===== Tablet View ===== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 8%;
+  }
+
+  .hero__text h1 {
+    font-size: 40px;
+  }
+
+  .hero__headline {
+    font-size: 2.5rem;
+  }
+
+  .hero__text p {
+    font-size: 18px;
+  }
+
+  .hero__social {
+    width: 45px;
+    height: 45px;
+  }
+
+  .hero__social img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ===== Small Mobile View (480px and below) ===== */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 5%; /* smaller padding */
+  }
+
+  .hero__text h1 {
+    font-size: 24px; /* smaller main heading */
+    line-height: 1.2;
+  }
+
+  .hero__headline {
+    font-size: 1.5rem; /* smaller subheading */
+  }
+
+  .hero__text p {
+    font-size: 14px; /* smaller paragraph */
+  }
+
+  .hero__social {
+    width: 32px; /* smaller social icon */
+    height: 32px;
+  }
+
+  .hero__social img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero__illustration img {
+    width: 100%;
+    margin-top: 15px;
+  }
 }

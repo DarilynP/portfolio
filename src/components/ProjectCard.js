@@ -5,18 +5,20 @@ const ProjectCard = ({ index, title, image, description, github, live, reverse }
   return (
     <div className={`project-card ${reverse ? "reverse" : ""}`}>
       
-      {/* Image container */}
+      {/* Number */}
+      <div className="project-card__number">
+        {index.toString().padStart(2, "0")}
+      </div>
+
+      {/* Image */}
       {image && (
         <div className="project-card__image">
           <img src={image} alt={title} />
         </div>
       )}
 
-      {/* Description container */}
+      {/* Description */}
       <div className="project-card__description-container">
-        <div className="project-card__number">
-          {index.toString().padStart(2, "0")}
-        </div>
         <h3 className="project-card__title">{title}</h3>
         <p className="project-card__description">{description}</p>
 
@@ -27,8 +29,6 @@ const ProjectCard = ({ index, title, image, description, github, live, reverse }
               GitHub
             </a>
           )}
-
-          {/* Replaced “Live Demo” text with icon */}
           {live && (
             <a href={live} target="_blank" rel="noopener noreferrer">
               <img

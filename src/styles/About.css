@@ -40,3 +40,57 @@
 .about__image img {
   width: 100%;
 }
+/* Tablet View (screens 1024px and below) */
+@media (max-width: 1024px) {
+  .about {
+    padding: 60px 5%;
+  }
+
+  .about__container {
+    gap: 30px;
+  }
+
+  .about__text h2 {
+    font-size: 28px;
+  }
+
+  .about__text p {
+    font-size: 17px;
+  }
+
+  .about__image img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Mobile View (screens 768px and below) */
+/* ===== Mobile View for About Section ===== */
+@media (max-width: 480px) {
+  .about__container {
+    flex-direction: column; /* stack image above text */
+    align-items: flex-start; /* align everything to the left */
+    gap: 20px; /* smaller gap for mobile */
+  }
+
+  .about__text {
+    text-align: left; /* align text left */
+    width: 100%; /* take full width */
+  }
+
+  .about__text h2 {
+    font-size: 2rem; /* smaller heading */
+    text-align: left;
+  }
+
+  .about__text p {
+    font-size: 16px; /* smaller paragraphs */
+    line-height: 1.4;
+  }
+
+  .about__image img {
+    width: 100%; /* scale image for small screens */
+    height: auto;
+  }
+}

@@ -1,4 +1,4 @@
-/* Header container */
+/* ===== Header container ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,6 +7,7 @@
   background: white;
   position: relative;
   z-index: 10;
+  flex-wrap: wrap;
 }
 
 /* Logo */
@@ -24,14 +25,13 @@
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  
 }
 
 /* Links list */
 .header__links {
   display: flex;
   flex-direction: row;
-  gap: 40px; /* more spacing between nav links */
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px; /* spacing between text and icon */
+  gap: 10px;
   padding: 10px 24px;
   background-color: black;
   color: white;
@@ -63,11 +63,9 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 20px;
-  margin-left: 300px; /* added spacing from nav links */
   transition: background-color 0.2s ease;
 }
 
-/* Hover effect – gray background */
 .resume__button:hover {
   background-color: #555;
 }
@@ -76,5 +74,152 @@
 .hero__icon {
   width: 18px;
   height: 18px;
-  filter: brightness(0) invert(1); /* makes icon white */
+  filter: brightness(0) invert(1);
+}
+
+/* ===== Tablet View ===== */
+@media (max-width: 1024px) {
+  .header__logo {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .header__links {
+    gap: 25px;
+    font-size: 18px;
+  }
+
+  .resume__button {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    padding: 25px 33px;
+    padding-bottom: 0;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header__links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .resume__button {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+/* ===== Hamburger menu ===== */
+.header__vector {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  top: 20px;
+  left: 50px; /* aligned with logo */
+  right: auto;
+}
+
+.header__vector span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X when active */
+.header__vector.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header__vector.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__vector.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+/* ===== Mobile View ===== */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row; /* keep logo + hamburger in a row */
+    justify-content: space-between; /* push nav dropdown down separately */
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .header__logo {
+    margin-left: 0; /* remove extra margin */
+  }
+
+  /* Hamburger menu */
+  .header__vector {
+    display: flex; /* show hamburger */
+    position: relative; /* no absolute positioning needed */
+    top: auto;
+    left: auto;
+  }
+
+  /* Mobile dropdown */
+  .header__nav {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px; /* slight left padding */
+    right: 20px; /* same padding on right for symmetry */
+    width: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .header__nav.active {
+    display: flex;
+  }
+
+  .header__links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .resume__button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Push content down when menu is open */
+  .header-spacer {
+    height: 0;
+    transition: height 0.3s ease;
+  }
+  .header-spacer.active {
+    height: 320px;
+  }
 }
