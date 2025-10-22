@@ -185,6 +185,10 @@
   .contact-email {
     text-align: center;
   }
+
+  .contact-form{
+    width: 500px;
+  }
 } /* Mobile View (480px and below) */
 @media (max-width: 480px) {
   .contact-section {

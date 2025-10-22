@@ -97,15 +97,27 @@
 
 /* ===== Tablet View ===== */
 @media (max-width: 1024px) {
+  .project-card.reverse {
+    flex-direction: column;
+  }
+
+  .project-card{
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .projects__title{
     font-size: 40px;
   }
+
   .projects {
     padding: 60px 30px;
   }
 
   .project-card__number {
-    font-size: 3.5rem;
+    font-size: 40px;
+    text-align: left;       /* add this */
+    align-self: flex-start; /* add this */
   }
 
   .project-card__title {
