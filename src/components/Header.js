@@ -43,7 +43,7 @@ const Header = () => {
         </nav>
       </header>
 
-      {/* Spacer to push page content down */}
+      {/* Spacer for mobile dropdown */}
       <div className={`header-spacer ${menuOpen ? "active" : ""}`}></div>
     </>
   );

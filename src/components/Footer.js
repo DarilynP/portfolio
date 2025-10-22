@@ -4,7 +4,7 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Darilyn Peguero. All rights reserved.</p>
+      <p className="footer__copyright">© 2025 Darilyn Peguero. All rights reserved.</p>
     </footer>
   );
 };

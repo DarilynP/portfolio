@@ -10,7 +10,10 @@ const About = () => {
           <img src={aboutme} alt="about me illustration" />
         </div>
         <div className="about__text">
-          <h2>About Me</h2>
+        <h2 className="about__title">
+  About {""}<span className="about__highlight">Me</span>
+</h2>
+
           <p>
             I’m Darilyn, a Full Stack Software Engineer and designer with a passion
             for creating engaging, user-friendly web experiences. My journey into

@@ -7,10 +7,8 @@
   background-color: white;
 }
 .hero__text {
-  max-width: 100%;
   padding: 0 20px; /* gives space on left/right */
   box-sizing: border-box; /* include padding in width */
-  overflow-x: hidden; /* optional safety */
 }
 .hero__text h1,
 .hero__text p {
@@ -18,7 +16,6 @@
   overflow-wrap: break-word;
   line-height: 1.3; /* optional for spacing */
 }
-
 
 /* Text section */
 .hero__text h1 {
@@ -104,12 +101,17 @@
 
 /* ===== Tablet View ===== */
 @media (max-width: 1024px) {
+
+  .hero__illustration img{
+    width: 350px;
+
+  }
   .hero {
     padding: 60px 8%;
   }
 
   .hero__text h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .hero__headline {
@@ -134,36 +136,50 @@
 /* ===== Small Mobile View (480px and below) ===== */
 @media (max-width: 480px) {
   .hero {
-    flex-direction: column;
+    flex-direction: column; /* stack items vertically */
     align-items: flex-start;
-    padding: 20px 5%; /* smaller padding */
+    padding: 20px 5%;
+  }
+
+  /* Make image appear first */
+  .hero__illustration {
+    order: -1; /* moves image above text */
+    width: 100%;
+  }
+
+  .hero__illustration img {
+    width: 100%;
+    margin-bottom: 45px; /* spacing below image */
+    object-fit: contain;
+  }
+
+  .hero__text {
+    order: 0; /* default order for text */
+    padding: 0;
   }
 
   .hero__text h1 {
-    font-size: 24px; /* smaller main heading */
+    font-size: 24px;
     line-height: 1.2;
   }
 
   .hero__headline {
-    font-size: 1.5rem; /* smaller subheading */
+    font-size: 1.5rem;
   }
 
   .hero__text p {
-    font-size: 14px; /* smaller paragraph */
+    font-size: 16px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
   }
 
   .hero__social {
-    width: 32px; /* smaller social icon */
+    width: 32px;
     height: 32px;
   }
 
   .hero__social img {
     width: 20px;
     height: 20px;
-  }
-
-  .hero__illustration img {
-    width: 100%;
-    margin-top: 15px;
   }
 }

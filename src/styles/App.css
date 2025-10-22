@@ -1,14 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* prevent horizontal scrolling */
-    box-sizing: border-box; /* make sizing predictable */
-    width: 100%; /* ensure no body exceeds viewport */
-  }
-  *, *::before, *::after {
-    box-sizing: inherit; /* inherit box-sizing */
-  }
-  /* * {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scrolling */
+  box-sizing: border-box; /* make sizing predictable */
+  width: 100%; /* ensure no body exceeds viewport */
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* inherit box-sizing */
+}
+/* * {
     outline: 1px solid rgba(255,0,0,0.3);
   } */
-  

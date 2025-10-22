@@ -14,6 +14,7 @@
 
 .skills h2 .regular {
   font-weight: 400; /* regular weight, not bold */
+  margin-right: 8px;
 }
 
 /* Skill logos container */
@@ -81,7 +82,7 @@
   }
 
   .skills h2 {
-    font-size: 3.5rem; /* slightly smaller */
+    font-size: 40px; /* slightly smaller */
   }
 
   .skills__logos {
@@ -110,6 +111,7 @@
 
   .skills h2 {
     font-size: 2rem;
+    margin-top: 40px;
   }
 
   .skills__logos {
