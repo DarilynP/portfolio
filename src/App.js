@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import "./styles/App.css";
+import Experience from "./components/Experience";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Header />
       <Hero />
       <Skills />
+      <Experience />
       <About />
       <Projects />
       <Contact />

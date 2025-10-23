@@ -1,0 +1,43 @@
+/* Experience.css */
+.experience {
+    padding: 50px 5%;
+    background-color: #111; /* Dark background like skills section */
+    color: #fff;
+  }
+  
+  .experience__title {
+    font-family: "Sora", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .experience__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .experience__item {
+    border-left: 3px solid #df4300; /* accent color */
+    padding-left: 20px;
+  }
+  
+  .experience__role {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .experience__company,
+  .experience__period {
+    font-size: 1rem;
+    margin: 2px 0;
+    color: #aaa;
+  }
+  
+  .experience__description {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
