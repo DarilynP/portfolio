@@ -101,12 +101,12 @@
     flex-direction: column;
   }
 
-  .project-card{
+  .project-card {
     flex-direction: column;
     gap: 30px;
   }
 
-  .projects__title{
+  .projects__title {
     font-size: 40px;
   }
 
@@ -116,7 +116,7 @@
 
   .project-card__number {
     font-size: 40px;
-    text-align: left;       /* add this */
+    text-align: left; /* add this */
     align-self: flex-start; /* add this */
   }
 
@@ -139,6 +139,7 @@
     font-size: 28px;
     text-align: center;
     font-weight: 400;
+    margin: 20px 0px 20px 0px;
   }
 
   .projects__list {

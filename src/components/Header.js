@@ -25,21 +25,23 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
-          <ul className="header__links">
-            <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-            <li><a href="#contacts" onClick={() => setMenuOpen(false)}>Contact</a></li>
-          </ul>
-          <a
-            href={resumePdf}
-            download="Darilyn_Peguero_Resume.pdf"
-            className="resume__button"
-            onClick={() => setMenuOpen(false)}
-          >
-            Resume
-            <img src={download} alt="Download" className="hero__icon" />
-          </a>
+          <div className="header__nav-container">
+            <ul className="header__links">
+              <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
+              <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+              <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+              <li><a href="#contacts" onClick={() => setMenuOpen(false)}>Contact</a></li>
+            </ul>
+            <a
+              href={resumePdf}
+              download="Darilyn_Peguero_Resume.pdf"
+              className="resume__button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Resume
+              <img src={download} alt="Download" className="hero__icon" />
+            </a>
+          </div>
         </nav>
       </header>
 
