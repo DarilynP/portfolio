@@ -2,19 +2,20 @@
 import React from "react";
 import "../styles/Experience.css";
 
-
 const experiences = [
   {
     role: "Software Engineer Intern",
-    company: "TechCorp",
-    period: "June 2024 - August 2024",
-    description: "Worked on improving the frontend of the internal dashboard using React and Tailwind. Collaborated with backend team to integrate APIs."
+    company: "OC Wildland Fire & Training ",
+    period: "september 2025 - november 2025",
+    description:
+      "Worked on improving the frontend of the internal dashboard using React and Tailwind. Collaborated with backend team to integrate APIs.",
   },
   {
     role: "Frontend Developer",
     company: "Freelance",
     period: "January 2024 - Present",
-    description: "Built responsive portfolio websites for clients using React, HTML, CSS, and JavaScript."
+    description:
+      "Built responsive portfolio websites for clients using React, HTML, CSS, and JavaScript.",
   },
   // Add more experiences as needed
 ];
