@@ -8,6 +8,7 @@ import mongodb from "../assets/icon-mongodb.png";
 import node from "../assets/icon-nodejs.png";
 import react from "../assets/icon-react.png";
 import tailwind from "../assets/icon-tailwindcss.png";
+import tyescript from "../assets/icon-typescript.png";
 
 const skills = [
   { img: git, name: "Git" },
@@ -18,6 +19,7 @@ const skills = [
   { img: node, name: "node" },
   { img: react, name: "react" },
   { img: tailwind, name: "tailwind" },
+  { img: tyescript, name: "typescript" },
 ];
 
 const Skills = () => {
