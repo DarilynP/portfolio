@@ -17,7 +17,13 @@ const experiences = [
     description:
       "Built responsive portfolio websites for clients using React, HTML, CSS, and JavaScript.",
   },
-  // Add more experiences as needed
+  {
+    role: "Phelebotmist",
+    company: "Labcorp",
+    period: "July 2021 - Present",
+    description:
+      "Collecting blood and other specimens from patients in a safe, accurate, and compassionate manner. They ensure proper labeling, handling, and transport of samples while maintaining strict infection control and quality standards. Collecting specimen in a timely manner with attention to detail and adherence to laboratory protocols.",
+  },
 ];
 
 const Experience = () => {

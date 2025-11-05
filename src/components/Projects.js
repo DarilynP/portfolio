@@ -5,9 +5,18 @@ import wtwrss from "../assets/wtwrss.png";
 import newsapiss from "../assets/newsapiss.png";
 import todo from "../assets/todo.png";
 import coffee from "../assets/coffee.png";
+import ecommerce from "../assets/Screenshot.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Euphoria E-commerce",
+      image: ecommerce,
+      description:
+        "News Explorer lets users search and browse articles from multiple sources. Users can save their favorite articles for later reading. The app provides a clean and intuitive interface for efficient news exploration.",
+      live: "https://DarilynP.github.io/ecommerce-frontend/",
+    },
+
     {
       title: "News Explorer",
       image: newsapiss,
