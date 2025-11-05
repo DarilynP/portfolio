@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Euphoria E-commerce",
       image: ecommerce,
       description:
-        "News Explorer lets users search and browse articles from multiple sources. Users can save their favorite articles for later reading. The app provides a clean and intuitive interface for efficient news exploration.",
+        "Euphoria is a modern e-commerce web app built with React and Vite. It features product listings, category filtering, a favorites system, and a dynamic shopping cart — all wrapped in a clean, responsive design for a smooth online shopping experience.",
       live: "https://DarilynP.github.io/ecommerce-frontend/",
     },
 
