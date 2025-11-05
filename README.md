@@ -21,7 +21,5 @@ A modern and responsive portfolio website built with **React**, designed to show
 - **Deployment:** GitHub Pages  
 - **Version Control:** Git & GitHub  
 
----
 
-## 📂 Project Structure
 
