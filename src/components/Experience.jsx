@@ -1,28 +1,27 @@
-// Experience.jsx
 import React from "react";
 import "../styles/Experience.css";
 
 const experiences = [
   {
     role: "Software Engineer Intern",
-    company: "OC Wildland Fire & Training ",
-    period: "september 2025 - november 2025",
+    company: "OC Wildland Fire & Training",
+    period: "September 2025 - November 2025",
     description:
-      "Worked on improving the frontend of the internal dashboard using React and Tailwind. Collaborated with backend team to integrate APIs.",
+      "Contributed to the design and development of a full-stack training platform using React, Tailwind CSS, and Keystone.js. Collaborated closely with the backend team to integrate GraphQL APIs and improve data flow between the client and server. Focused on enhancing UI/UX consistency, implementing reusable components, and optimizing frontend performance for smoother user interactions.",
   },
   {
     role: "Frontend Developer",
     company: "Freelance",
     period: "January 2024 - Present",
     description:
-      "Built responsive portfolio websites for clients using React, HTML, CSS, and JavaScript.",
+      "Developed modern, responsive websites for small businesses and personal brands using React, JavaScript, and CSS frameworks. Collaborated with clients from concept to deployment to translate design ideas into functional web experiences. Implemented accessibility, SEO best practices, and performance optimizations to deliver fast, mobile-friendly interfaces.",
   },
   {
-    role: "Phelebotmist",
+    role: "Phlebotomist",
     company: "Labcorp",
     period: "July 2021 - Present",
     description:
-      "Collecting blood and other specimens from patients in a safe, accurate, and compassionate manner. They ensure proper labeling, handling, and transport of samples while maintaining strict infection control and quality standards. Collecting specimen in a timely manner with attention to detail and adherence to laboratory protocols.",
+      "Provide high-quality patient care by collecting and processing blood and specimen samples safely and efficiently in a high-volume laboratory environment. Maintain strict accuracy in labeling, documentation, and data entry while following HIPAA and infection-control standards. Recognized for professionalism, attention to detail, and strong communication skills when working with diverse patient populations.",
   },
 ];
 
