@@ -13,7 +13,7 @@ const Header = () => {
       <header className="header">
         <div className="header__logo">My Portfolio</div>
 
-        {/* Hamburger / X */}
+        {/* Hamburger */}
         <div
           className={`header__vector ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}
@@ -23,26 +23,42 @@ const Header = () => {
           <span></span>
         </div>
 
-        {/* Navigation */}
+        {/* Navigation links ONLY */}
         <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
-          <div className="header__nav-container">
-            <ul className="header__links">
-              <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
-              <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-              <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-              <li><a href="#contacts" onClick={() => setMenuOpen(false)}>Contact</a></li>
-            </ul>
-            <a
-              href={resumePdf}
-              download="Darilyn_Peguero_Resume.pdf"
-              className="resume__button"
-              onClick={() => setMenuOpen(false)}
-            >
-              Resume
-              <img src={download} alt="Download" className="hero__icon" />
-            </a>
-          </div>
+          <ul className="header__links">
+            <li>
+              <a href="#hero" onClick={() => setMenuOpen(false)}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setMenuOpen(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => setMenuOpen(false)}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contacts" onClick={() => setMenuOpen(false)}>
+                Contact
+              </a>
+            </li>
+          </ul>
         </nav>
+
+        {/* RIGHT SIDE BUTTON */}
+        <a
+          href={resumePdf}
+          download="Darilyn_Peguero_Resume.pdf"
+          className="resume__button"
+          onClick={() => setMenuOpen(false)}
+        >
+          Resume
+          <img src={download} alt="Download" className="hero__icon" />
+        </a>
       </header>
 
       {/* Spacer for mobile dropdown */}
