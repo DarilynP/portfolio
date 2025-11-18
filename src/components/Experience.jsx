@@ -7,21 +7,15 @@ const experiences = [
     company: "OC Wildland Fire & Training",
     period: "September 2025 - November 2025",
     description:
-      "Contributed to the design and development of a full-stack training platform using React, Tailwind CSS, and Keystone.js. Collaborated closely with the backend team to integrate GraphQL APIs and improve data flow between the client and server. Focused on enhancing UI/UX consistency, implementing reusable components, and optimizing frontend performance for smoother user interactions.",
+      "Built and maintained core features for a full-stack training and enrollment platform using React, TypeScript, Tailwind CSS, and Keystone.js. Collaborated with backend engineers to design and integrate GraphQL queries and mutations, improving data consistency across the application. Contributed reusable UI components and enhanced UX flow, resulting in a faster and more intuitive interface. Participated in Agile sprint planning, code reviews, and technical discussions, gaining experience in real production-level engineering workflows.",
   },
-  {
-    role: "Frontend Developer",
-    company: "Freelance",
-    period: "January 2024 - Present",
-    description:
-      "Developed modern, responsive websites for small businesses and personal brands using React, JavaScript, and CSS frameworks. Collaborated with clients from concept to deployment to translate design ideas into functional web experiences. Implemented accessibility, SEO best practices, and performance optimizations to deliver fast, mobile-friendly interfaces.",
-  },
+
   {
     role: "Phlebotomist",
     company: "Labcorp",
     period: "July 2021 - Present",
     description:
-      "Provide high-quality patient care by collecting and processing blood and specimen samples safely and efficiently in a high-volume laboratory environment. Maintain strict accuracy in labeling, documentation, and data entry while following HIPAA and infection-control standards. Recognized for professionalism, attention to detail, and strong communication skills when working with diverse patient populations.",
+      "Collect and process high-volume blood and specimen samples while ensuring accuracy in patient identification, labeling, and documentation. Communicate clearly and compassionately with patients of all ages and backgrounds, helping ease discomfort and anxiety during procedures. Maintain strict compliance with HIPAA, biosafety protocols, and infection control standards. Consistently recognized by supervisors and patients for professionalism, attention to detail, and strong reliability in fast-paced medical environments.",
   },
 ];
 
