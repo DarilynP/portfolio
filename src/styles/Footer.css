@@ -1,8 +1,10 @@
 .footer__copyright{
-    padding: 20px;
+    padding: 40px;
     background-color: black;
     font-size: 12px;
     color: white;
     font-weight: 600;
     height: 80px;
+    margin: 0
+    ;
 }

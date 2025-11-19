@@ -13,7 +13,6 @@
   z-index: 1000;
 }
 
-
 .header__logo {
   font-family: "Sora", sans-serif;
   font-size: 1.8rem;
@@ -21,7 +20,6 @@
   letter-spacing: 1px;
   justify-self: start;
 }
-
 
 /* ===== NAVIGATION (DESKTOP DEFAULT) ===== */
 .header__nav {
@@ -135,6 +133,8 @@
   .header {
     position: static;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   /* Show hamburger */
@@ -158,6 +158,10 @@
     transition: all 0.3s ease;
   }
 
+  .header__nav.active .resume__button {
+    display: flex;
+  }
+  
   .header__nav.active {
     opacity: 1;
     pointer-events: auto;
@@ -171,6 +175,8 @@
     align-items: flex-start;
     gap: 20px;
     width: 100%;
+    font-weight: 800;
+    padding-left: 0;
   }
 
   .header__links a {
@@ -200,6 +206,7 @@
     padding: 10px 24px;
     width: 60%;
     justify-content: center;
+    display: none;
   }
 
   .resume__button:hover {

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Skills.css";
 import git from "../assets/git.png";
 import javascript from "../assets/javascript.png";
-import socket from "../assets/socket.png";
+// import socket from "../assets/socket.png";
 import express from "../assets/icon-express.png";
 import mongodb from "../assets/icon-mongodb.png";
 import node from "../assets/icon-nodejs.png";
@@ -13,7 +13,7 @@ import tyescript from "../assets/icon-typescript.png";
 const skills = [
   { img: git, name: "Git" },
   { img: javascript, name: "JavaScript" },
-  { img: socket, name: "Socket.io" },
+  // { img: socket, name: "Socket.io" },
   { img: express, name: "Express" },
   { img: mongodb, name: "mongodb" },
   { img: node, name: "node" },

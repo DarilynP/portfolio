@@ -23,7 +23,7 @@ const Header = () => {
           <span></span>
         </div>
 
-        {/* Navigation links ONLY */}
+        {/* Navigation + resume inside */}
         <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
           <ul className="header__links">
             <li>
@@ -47,18 +47,16 @@ const Header = () => {
               </a>
             </li>
           </ul>
+          <a
+            href={resumePdf}
+            download="Darilyn_Peguero_Resume.pdf"
+            className="resume__button"
+            onClick={() => setMenuOpen(false)}
+          >
+            Resume
+            <img src={download} alt="Download" className="hero__icon" />
+          </a>
         </nav>
-
-        {/* RIGHT SIDE BUTTON */}
-        <a
-          href={resumePdf}
-          download="Darilyn_Peguero_Resume.pdf"
-          className="resume__button"
-          onClick={() => setMenuOpen(false)}
-        >
-          Resume
-          <img src={download} alt="Download" className="hero__icon" />
-        </a>
       </header>
 
       {/* Spacer for mobile dropdown */}
