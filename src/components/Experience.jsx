@@ -7,7 +7,7 @@ const experiences = [
     company: "OC Wildland Fire & Training",
     period: "September 2025 - November 2025",
     description:
-      "Built and maintained core features for a full-stack training and enrollment platform using React, TypeScript, Tailwind CSS, and Keystone.js. Collaborated with backend engineers to design and integrate GraphQL queries and mutations, improving data consistency across the application. Contributed reusable UI components and enhanced UX flow, resulting in a faster and more intuitive interface. Participated in Agile sprint planning, code reviews, and technical discussions, gaining experience in real production-level engineering workflows.",
+      "Built and maintained core features for a full-stack training and enrollment platform using React, TypeScript, Tailwind CSS, and Keystone.js. Collaborated closely with backend engineers to design, test, and integrate GraphQL queries and mutations, improving data accuracy and API performance across the application. Developed reusable, accessible UI components that enhanced consistency and reduced frontend development time. Actively contributed to Agile sprints, code reviews, and team planning, gaining hands-on experience with real production workflows and best practices.",
   },
 
   {
@@ -15,7 +15,7 @@ const experiences = [
     company: "Labcorp",
     period: "July 2021 - Present",
     description:
-      "Collect and process high-volume blood and specimen samples while ensuring accuracy in patient identification, labeling, and documentation. Communicate clearly and compassionately with patients of all ages and backgrounds, helping ease discomfort and anxiety during procedures. Maintain strict compliance with HIPAA, biosafety protocols, and infection control standards. Consistently recognized by supervisors and patients for professionalism, attention to detail, and strong reliability in fast-paced medical environments.",
+      "Collect and process high-volume blood and specimen samples while maintaining strict accuracy in patient identification, labeling, and electronic documentation. Provide compassionate care by communicating clearly with patients and helping reduce anxiety during procedures. Follow all HIPAA, biosafety, and infection-control protocols to ensure a safe and compliant clinical environment. Recognized for reliability, professionalism, and delivering consistently high-quality results in fast-paced medical settings.",
   },
 ];
 
