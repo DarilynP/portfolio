@@ -6,12 +6,9 @@
   height: 80px;
   background-color: white;
   color: black;
-
-  /* CHANGED: grid → flex  */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 40px;
   z-index: 1000;
 }
@@ -21,32 +18,28 @@
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 1px;
-  justify-self: start;
 }
 
 /* ===== NAVIGATION (DESKTOP DEFAULT) ===== */
 .header__nav {
   display: flex;
   align-items: center;
-
-  /* NEW: centers nav in desktop */
-  flex: 1;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.header__nav-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between; /* handles spacing automatically */
-  gap: 0; /* REMOVE hard-coded spacing */
-}
+/* REMOVE THIS ENTIRE BLOCK - it's not needed */
+/* .header__nav-container {
+  ...
+} */
 
 .header__links {
   display: flex;
   gap: 30px;
   list-style: none;
-  justify-self: center;
+  padding: 0;
+  margin: 0;
 }
 
 .header__links a {
@@ -72,13 +65,20 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-
-  /* NEW: ensures Resume stays on the right */
-  margin-left: auto;
 }
 
 .resume__button:hover {
   background-color: #ff5e1f;
+}
+
+/* Desktop resume button - visible, positioned on right */
+.resume__button--desktop {
+  display: inline-flex;
+}
+
+/* Mobile resume button - hidden on desktop */
+.resume__button--mobile {
+  display: none;
 }
 
 .hero__icon {
@@ -88,15 +88,20 @@
 
 /* ===== HAMBURGER ICON ===== */
 .header__vector {
-  /* NEW: hamburger sits on top, NOT in flex flow */
   position: absolute;
   right: 40px;
   top: 26px;
-  display: none; /* stays hidden on desktop */
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 25px;
+  cursor: pointer;
 }
+
 .header__vector span {
   display: block;
   height: 3px;
+  width: 100%;
   background-color: black;
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -115,7 +120,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ===== SPACER (keeps content from being hidden under fixed header) ===== */
+/* ===== SPACER ===== */
 .header-spacer {
   height: 80px;
 }
@@ -129,9 +134,6 @@
   .header__links {
     gap: 20px;
   }
-  .header__nav-container {
-    gap: 60px;
-  }
 }
 
 /* ===== MOBILE VIEW ===== */
@@ -139,8 +141,6 @@
   .header {
     position: static;
     padding: 10px 20px;
-
-    /* NEW: flex is perfect for mobile too */
     display: flex;
     justify-content: space-between;
   }
@@ -165,13 +165,9 @@
     pointer-events: none;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-
-    /* REMOVE desktop flex centering on mobile */
-    flex: none;
-    justify-content: flex-start;
   }
 
-  .header__nav.active .resume__button {
+  .header__nav.active .resume__button--mobile {
     display: flex;
   }
   
@@ -199,7 +195,7 @@
   }
 
   .header__nav.active .header__links a {
-    color: white; /* white text when dropdown is active */
+    color: white;
   }
 
   .header__links a:hover {
@@ -207,7 +203,8 @@
   }
 
   /* Resume button at bottom center */
-  .resume__button {
+  .resume__button--mobile {
+    display: flex;
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -219,12 +216,16 @@
     padding: 10px 24px;
     width: 60%;
     justify-content: center;
-    display: none;
   }
 
-  .resume__button:hover {
+  .resume__button--mobile:hover {
     background-color: black;
     color: white;
+  }
+
+  /* Hide desktop resume button on mobile */
+  .resume__button--desktop {
+    display: none;
   }
 
   /* Logo centered on mobile */

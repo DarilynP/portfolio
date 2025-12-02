@@ -23,7 +23,7 @@ const Header = () => {
           <span></span>
         </div>
 
-        {/* Navigation + resume inside */}
+        {/* Navigation - ONLY links inside */}
         <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
           <ul className="header__links">
             <li>
@@ -47,16 +47,28 @@ const Header = () => {
               </a>
             </li>
           </ul>
+
+          {/* Resume button for MOBILE only - inside nav for dropdown */}
           <a
             href={resumePdf}
-            download="Darilyn_Peguero_Resume.pdf"
-            className="resume__button"
+            download="Darilyn_Peguero_SWE_resume.pdf"
+            className="resume__button resume__button--mobile"
             onClick={() => setMenuOpen(false)}
           >
             Resume
             <img src={download} alt="Download" className="hero__icon" />
           </a>
         </nav>
+
+        {/* Resume button for DESKTOP - outside nav */}
+        <a
+          href={resumePdf}
+          download="Darilyn_Peguero_Resume.pdf"
+          className="resume__button resume__button--desktop"
+        >
+          Resume
+          <img src={download} alt="Download" className="hero__icon" />
+        </a>
       </header>
 
       {/* Spacer for mobile dropdown */}
