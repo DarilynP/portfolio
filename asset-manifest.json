@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aea66168.css",
-    "main.js": "/portfolio/static/js/main.61294b7c.js",
+    "main.css": "/portfolio/static/css/main.0681a7a9.css",
+    "main.js": "/portfolio/static/js/main.a6a4ca7d.js",
     "static/js/453.ececc0a5.chunk.js": "/portfolio/static/js/453.ececc0a5.chunk.js",
     "static/media/newsapiss.png": "/portfolio/static/media/newsapiss.8b00327e74ba02da2770.png",
     "static/media/wtwrss.png": "/portfolio/static/media/wtwrss.4d9e4467df1dc8201491.png",
     "static/media/Screenshot.png": "/portfolio/static/media/Screenshot.191c37690d8f91483de5.png",
     "static/media/coffee.png": "/portfolio/static/media/coffee.57637db17c2c9feaa6a3.png",
     "static/media/todo.png": "/portfolio/static/media/todo.25ea9d6f13e49b0865e9.png",
-    "static/media/dpresume.pdf": "/portfolio/static/media/dpresume.e466ceef2eda90f6c431.pdf",
+    "static/media/dpresume.pdf": "/portfolio/static/media/dpresume.914bfa6c6b1f1bdb1ced.pdf",
     "static/media/girlbanner1.png": "/portfolio/static/media/girlbanner1.e141dc9fa251d85ed547.png",
     "static/media/aboutme.png": "/portfolio/static/media/aboutme.2c63861d90059e824557.png",
     "index.html": "/portfolio/index.html",
-    "main.aea66168.css.map": "/portfolio/static/css/main.aea66168.css.map",
-    "main.61294b7c.js.map": "/portfolio/static/js/main.61294b7c.js.map",
+    "main.0681a7a9.css.map": "/portfolio/static/css/main.0681a7a9.css.map",
+    "main.a6a4ca7d.js.map": "/portfolio/static/js/main.a6a4ca7d.js.map",
     "453.ececc0a5.chunk.js.map": "/portfolio/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aea66168.css",
-    "static/js/main.61294b7c.js"
+    "static/css/main.0681a7a9.css",
+    "static/js/main.a6a4ca7d.js"
   ]
 }
