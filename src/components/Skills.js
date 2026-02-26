@@ -11,6 +11,7 @@ import tailwind from "../assets/icon-tailwindcss.png";
 import tyescript from "../assets/icon-typescript.png";
 import n8n from "../assets/n8n.png";
 import supabase from "../assets/supabase_icon.png";
+import graphql from "../assets/graphql_icon.png";
 
 const skills = [
   { img: git, name: "Git" },
@@ -24,6 +25,7 @@ const skills = [
   { img: tyescript, name: "typescript" },
   { img: n8n, name: "n8n" },
   { img: supabase, name: "Supabase" },
+  { img: graphql, name: "GraphQL" },
 ];
 
 const Skills = () => {
