@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
 import download from "../assets/download.png";
-import resumePdf from "../assets/dpresume.pdf";
+import resumePdf from "../assets/Peguero_resume.pdf";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
