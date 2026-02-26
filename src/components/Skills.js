@@ -9,6 +9,8 @@ import node from "../assets/icon-nodejs.png";
 import react from "../assets/icon-react.png";
 import tailwind from "../assets/icon-tailwindcss.png";
 import tyescript from "../assets/icon-typescript.png";
+import n8n from "../assets/n8n.png";
+import supabase from "../assets/supabase_icon.png";
 
 const skills = [
   { img: git, name: "Git" },
@@ -20,6 +22,8 @@ const skills = [
   { img: react, name: "react" },
   { img: tailwind, name: "tailwind" },
   { img: tyescript, name: "typescript" },
+  { img: n8n, name: "n8n" },
+  { img: supabase, name: "Supabase" },
 ];
 
 const Skills = () => {

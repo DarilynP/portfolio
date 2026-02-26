@@ -62,7 +62,10 @@
 
 /* Skill logo image */
 .skills__logo-box img {
-  margin-top: 40px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-top: 20px;
   transition: filter 0.3s ease;
 }
 

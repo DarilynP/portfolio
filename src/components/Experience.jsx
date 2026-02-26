@@ -3,6 +3,13 @@ import "../styles/Experience.css";
 
 const experiences = [
   {
+    role: "AI Automation Engineer Intern",
+    company: "Wayfair ",
+    period: " December 2025 - February 2026",
+    description:
+      "Designed and built AI-powered market intelligence agents to analyze competitor pricing, product trends, and category insights within Wayfair’s Rugs division. Developed automated workflows using n8n, Supabase, and Google Sheets to collect, clean, and structure multi-source data streams. Engineered logic-based pipelines to transform raw competitor data into actionable intelligence dashboards. Implemented prompt engineering techniques to generate executive-ready summaries and trend reports, demonstrating practical applications of AI systems in real business environments.",
+  },
+  {
     role: "Software Engineer Intern",
     company: "OC Wildland Fire & Training",
     period: "September 2025 - November 2025",
@@ -13,7 +20,7 @@ const experiences = [
   {
     role: "Phlebotomist",
     company: "Labcorp",
-    period: "July 2021 - Present",
+    period: "July 2021 - December 2025",
     description:
       "Collect and process high-volume blood and specimen samples while maintaining strict accuracy in patient identification, labeling, and electronic documentation. Provide compassionate care by communicating clearly with patients and helping reduce anxiety during procedures. Follow all HIPAA, biosafety, and infection-control protocols to ensure a safe and compliant clinical environment. Recognized for reliability, professionalism, and delivering consistently high-quality results in fast-paced medical settings.",
   },
